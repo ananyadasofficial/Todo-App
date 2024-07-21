@@ -19,22 +19,23 @@ uDo is a responsive Todo application built with React and styled using Bootstrap
 ## Setup Instructions
 To run the application locally on your machine, follow these steps:
 
-1.Clone the repository:
+1. Clone the repository:
 
 https://github.com/ananyadasofficial/Todo-App.git
 
-2.Navigate to the project directory:
+2. Navigate to the project directory:
 
 cd Todo-App
 
-3.Install dependencies:
+3. Install dependencies:
 
 npm install
 
-4.Run the application:
+4. Run the application:
 
 npm run dev
 
 This command will start the development server and open the application in your default web browser.
+
 
 By following these instructions, you can set up and start using uDo to manage your daily tasks efficiently.
