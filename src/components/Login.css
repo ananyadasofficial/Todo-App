@@ -10,11 +10,11 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #dfdfdf; /* Background color for the entire body */
+    background: #dfdfdf;
   }
   
   .login-container {
-    width: 400px; /* Fixed width for desktop */
+    width: 400px; 
     background: white;
     padding: 40px 30px;
     border-radius: 8px;
@@ -70,21 +70,21 @@
     text-decoration: underline;
   }
   
-  /* Media Query for Responsive Design */
+
   @media screen and (max-width: 768px) {
     .login-container {
-      width: 90%; /* Full width on smaller screens */
-      max-width: 400px; /* Max width remains 400px */
-      padding: 30px; /* Reduced padding */
+      width: 90%; 
+      max-width: 400px; 
+      padding: 30px; 
     }
   
     h1 {
-      font-size: 1.8rem; /* Smaller font size */
+      font-size: 1.8rem;
     }
   
     .login-form input,
     .login-form button {
-      font-size: 14px; /* Smaller font size for inputs and button */
+      font-size: 14px;
     }
   }
   
