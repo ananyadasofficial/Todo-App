@@ -1,0 +1,279 @@
+body {
+    background-color: #EEEEEE;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #d4f1ef;
+    min-height: 80vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.overflow-auto {
+    flex: 1;
+    max-height: 60vh; 
+    overflow-y: auto;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px; 
+}
+
+.taskbar {
+    padding: 12px;
+    flex: 1;
+    border: 1px solid #fff;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 16px; 
+}
+
+.add-button {
+    margin-left: 10px; 
+    border: 1px solid #ccc;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: #166f6b;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+}
+
+.add-button:hover {
+    background-color: #10524e;
+}
+
+.header {
+    font-size: 2.5rem; 
+    font-weight: 600;
+    padding: 20px 30px;
+    color: #166f6b;
+    text-align: center;
+}
+
+.subHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.editbtn,
+.deletebtn {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    padding: 8px;
+    font-size: 14px; 
+}
+
+.todoItems,
+.status,
+.actions {
+    width: 30%;
+    text-align: center;
+    font-size: 1rem; 
+}
+
+.todoItems {
+    width: 40%;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.listCheckbox {
+    width: 10%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.listData,
+.listStatus,
+.listActions {
+    width: 30%;
+    text-align: center;
+    font-size: 1rem; 
+}
+
+.listData {
+    width: 40%;
+}
+
+.listDate {
+    color: #758694;
+    font-size: 0.9rem;
+}
+
+.listStatus {
+    color: orange;
+}
+
+.listStatus.completed {
+    color: green;
+}
+
+.listActions button {
+    margin: 0 5px;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.search-filter-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid #ccc;
+    padding: 6px;
+    width: 100%; 
+    max-width: 300px; 
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    color: #758694;
+}
+
+.search-bar input {
+    flex: 1; 
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.category-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.category-heading {
+    margin: 0;
+    font-size: 1rem; 
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+}
+
+.filter-heading {
+    margin: 0 10px;
+    font-size: 1rem; 
+}
+
+.filter-select,
+.sort-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px; 
+}
+
+.calendar-icon {
+    cursor: pointer;
+    margin-left: -50px;
+    color: gray;
+}
+
+.datepicker-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    font-size: 2rem; 
+    margin-top: 0.75rem;
+}
+
+.notasks {
+    color: grey;
+    text-align: center;
+}
+
+.btn-info {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .subHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .todoItems,
+    .status,
+    .actions {
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .search-filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .filter-container {
+        margin-top: 10px;
+    }
+
+    .filter-select,
+    .sort-select {
+        width: auto;
+        margin-right: 10px;
+    }
+}
