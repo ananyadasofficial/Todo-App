@@ -38,3 +38,5 @@ To run the application locally on your machine, follow these steps:
 
 
 By following these instructions, you can set up and start using uDo to manage your daily tasks efficiently.
+
+## Check out uDo - Your Daily Organizer at https://udo-organizer.netlify.app/.
